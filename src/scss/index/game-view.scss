@@ -1,0 +1,60 @@
+.game-view {
+  flex: 5;
+  padding: 2% 0;
+  height: 100%;
+
+  .wrap {
+    @include flex-center(column);
+    @include size(95%, 100%);
+
+    align-items: stretch;
+    margin: 0 auto;
+  }
+
+  .view-block {
+    @include flex-center();
+
+    align-items: stretch;
+    flex: 1;
+  }
+
+  .observer {
+    pointer-events: none;
+
+    .blocks {
+      height: 20%;
+
+      .block {
+      }
+    }
+  }
+
+  .group {
+    @include flex-center();
+
+    padding: 1%;
+    flex: 1;
+  }
+
+  .blocks {
+    @include flex-center();
+    @include size(80%, 50%);
+
+    justify-content: space-around;
+    margin: 0 auto;
+
+    .block {
+      @include flex-center();
+      @include size(20%, 100%);
+
+      font-size: 20px;
+      color: #fff;
+      transition: 0.2s;
+
+      &:active {
+        background-color: #fff;
+        transition: 0s;
+      }
+    }
+  }
+}

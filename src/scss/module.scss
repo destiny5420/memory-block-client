@@ -1,0 +1,46 @@
+@import 'rules';
+
+* {
+  @include border();
+
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  @include size(100%, auto);
+  @include flex-center(column);
+
+  background-color: $color-background;
+}
+
+/* 頁首 頁尾 */
+header {
+}
+
+footer {
+}
+
+/* 內容框架 */
+.container {
+  @include flex-center();
+  @include size(100%, 85vh);
+
+  align-items: stretch;
+  margin: 0 auto;
+  min-width: 1280px;
+  min-height: 800px;
+}
+
+.layout {
+}
+
+/* 字型規則 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}

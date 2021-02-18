@@ -1,0 +1,22 @@
+/* 各式 device size */
+@mixin border($width: 1px) {
+  box-shadow: 0 0 2px white;
+}
+
+@mixin size($width: 100%, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin independent($zIndex: 1) {
+  content: '';
+  position: absolute;
+  z-index: $zIndex;
+}
+
+@mixin flex-center($dir: row) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: center;
+  align-items: center;
+}

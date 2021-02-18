@@ -1,0 +1,136 @@
+.chat {
+  @include flex-center(column);
+
+  justify-content: flex-start;
+  align-items: stretch;
+
+  &__container {
+    @include size(350px, 70%);
+    @include flex-center(column);
+
+    padding: 2%;
+    // margin-bottom: 5%;
+  }
+
+  &__messages {
+    margin-bottom: 5%;
+    width: 100%;
+    height: 85%;
+    background-color: #2b2b2b;
+
+    .wrap {
+      @include size(100%);
+
+      overflow: scroll;
+      padding: 0 3%;
+    }
+
+    .message {
+      @include size(100%, auto);
+
+      padding: 3%;
+      margin: 3% 0;
+      color: #fff;
+      background-color: rgba($color: $color-chat, $alpha: 0.5);
+      border-radius: 12px;
+
+      .meta {
+        margin-bottom: 2%;
+
+        .user-name {
+          font-weight: bold;
+          color: gray;
+        }
+
+        .time {
+        }
+      }
+
+      .text {
+        word-break: break-all;
+      }
+    }
+  }
+
+  &__form {
+    position: relative;
+    width: 100%;
+    height: 15%;
+
+    .wrap {
+      @include size(100%, 100%);
+    }
+
+    .form {
+      @include flex-center(column);
+
+      align-items: stretch;
+      height: 100%;
+
+      &__input {
+        @include size(auto, 50%);
+
+        padding: 0% 3%;
+        font-size: 16px;
+        text-decoration: none;
+        border: none;
+        outline: none;
+      }
+
+      &__button {
+        @include flex-center();
+        @include size(auto, 50%);
+
+        background-color: #efefef;
+        border: none;
+        transition: 0.3s;
+        cursor: pointer;
+        outline-style: none;
+
+        svg {
+          color: black;
+        }
+
+        &:hover {
+          background-color: #c5c5c5;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+
+  &__members {
+    @include size(350px, 30%);
+
+    .wrap {
+      @include size(100%, 100%);
+
+      overflow: hidden;
+      margin: 0 auto;
+    }
+
+    .title {
+      padding: 2%;
+      font-size: 20px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+    }
+
+    .list {
+      @include size(94%, 100%);
+      @include flex-center(column);
+
+      justify-content: flex-start;
+      align-items: stretch;
+      overflow: scroll;
+      margin: 0 auto;
+      color: #fff;
+
+      .item {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+    }
+  }
+}

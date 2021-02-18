@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh" class="stop">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta name="viewport" content="<%= htmlWebpackPlugin.options.viewport %>" />
+    <meta name="description" content="<%= htmlWebpackPlugin.options.description %>" />
+    <meta name="keywords" content="<%= htmlWebpackPlugin.options.keywords %>" />
+    <meta property="og:title" content="<%= htmlWebpackPlugin.options.title %>" />
+    <meta property="og:description" content="<%= htmlWebpackPlugin.options.description %>" />
+    <meta property="og:type" content="<%= htmlWebpackPlugin.options.ogtype %>" />
+    <meta property="og:site_name" content="<%= htmlWebpackPlugin.options.title %>" />
+    <meta property="og:image" content="<%= htmlWebpackPlugin.options.ogimage %>" />
+    <meta property="og:url" content="<%= htmlWebpackPlugin.options.ogurl %>" />
+    <meta property="og:locale" content="<%= htmlWebpackPlugin.options.oglocale %>" />
+    <link rel="stylesheet" href="./assets/css/reset.min.css" />
+    <link rel="icon" type="image/x-icon" href="<%= htmlWebpackPlugin.options.icon %>" title="" />
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.options.includeFont %>" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="game-view">
+        <div class="wrap">
+          <div class="view-block observer">
+            <div id="observer-1" class="group">
+              <div class="blocks">
+                <div class="block">1</div>
+                <div class="block">2</div>
+                <div class="block">3</div>
+                <div class="block">4</div>
+              </div>
+            </div>
+            <div id="observer-2" class="group">
+              <div class="blocks">
+                <div class="block">1</div>
+                <div class="block">2</div>
+                <div class="block">3</div>
+                <div class="block">4</div>
+              </div>
+            </div>
+            <div id="observer-3" class="group">
+              <div class="blocks">
+                <div class="block">1</div>
+                <div class="block">2</div>
+                <div class="block">3</div>
+                <div class="block">4</div>
+              </div>
+            </div>
+          </div>
+          <div class="view-block">
+            <div class="group">
+              <div class="blocks">
+                <div class="block">1</div>
+                <div class="block">2</div>
+                <div class="block">3</div>
+                <div class="block">4</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chat">
+        <div class="chat__container">
+          <div class="chat__messages">
+            <div class="wrap"></div>
+          </div>
+          <div class="chat__form">
+            <div class="wrap">
+              <form class="form" id="chat-form">
+                <input
+                  class="form__input"
+                  id="msg"
+                  type="text"
+                  placeholder="Enter Message"
+                  required
+                  autocomplete="off"
+                />
+                <button class="form__button">
+                  <svg
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-return-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.5 1.5A.5.5 0 0 0 1 2v4.8a2.5 2.5 0 0 0 2.5 2.5h9.793l-3.347 3.346a.5.5 0 0 0 .708.708l4.2-4.2a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 8.3H3.5A1.5 1.5 0 0 1 2 6.8V2a.5.5 0 0 0-.5-.5z"
+                    />
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="chat__members">
+          <div class="wrap">
+            <div class="title">
+              <span>Uses</span>
+            </div>
+            <div class="list">
+              <span class="item">Paper</span>
+              <span class="item">Simon</span>
+              <span class="item">Leo</span>
+              <span class="item">Jess</span>
+              <span class="item">Paper</span>
+              <span class="item">Simon</span>
+              <span class="item">Leo</span>
+              <span class="item">Jess</span>
+              <span class="item">Paper</span>
+              <span class="item">Simon</span>
+              <span class="item">Leo</span>
+              <span class="item">Jess</span>
+              <span class="item">Paper</span>
+              <span class="item">Simon</span>
+              <span class="item">Leo</span>
+              <span class="item">Jess</span>
+              <span class="item">Paper</span>
+              <span class="item">Simon</span>
+              <span class="item">Leo</span>
+              <span class="item">Jess</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
